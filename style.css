@@ -496,6 +496,20 @@ footer {
     .imagen-sobremi::before {
         display: none;
     }
+    .iconos-sociales-principal {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin-top: 2rem;
+        flex-direction: row; /* En móvil vuelve a horizontal para mejor visualización */
+        justify-content: center;
+    }
+    
+    .iconos-sociales-principal .icono-social:hover {
+        transform: translateY(-5px); /* En móvil vuelve al efecto vertical en hover */
+    }
+    
 }
 
 @media (max-width: 768px) {
