@@ -87,7 +87,7 @@ nav {
 }
 
 .heroe {
-    min-height: 105vh;
+    min-height: 115vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
