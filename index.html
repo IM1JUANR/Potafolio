@@ -3,12 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IM1JUAN</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Meta Tags SEO Básicos -->
+    <title>Juan Camilo Alaguna (IM1JUAN) | Desarrollador Multimedia</title>
+    <meta name="description" content="Portfolio de Juan Camilo Alaguna (IM1JUAN), estudiante de último semestre de Ingeniería en Multimedia en Colombia. Desarrollo web, diseño UX/UI y aplicaciones móviles.">
+    <meta name="keywords" content="Juan Camilo Alaguna, IM1JUAN, desarrollador multimedia, desarrollo web Colombia, UX/UI design, portfolio">
+    <meta name="author" content="Juan Camilo Alaguna">
+    
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="Juan Camilo Alaguna (IM1JUAN) | Desarrollador Multimedia">
+    <meta property="og:description" content="Portfolio profesional de Juan Camilo Alaguna, conocido como IM1JUAN. Desarrollo web y diseño digital desde Cajicá, Colombia.">
+    <meta property="og:image" content="https://im1juanr.github.io/Potafolio/Images/Persona.jpg">
+    <meta property="og:url" content="https://im1juanr.github.io/Potafolio/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juan Camilo Alaguna (IM1JUAN) | Portfolio">
+    <meta name="twitter:description" content="Desarrollador multimedia y diseñador digital. Estudiante de último semestre de Ingeniería en Multimedia.">
+    <meta name="twitter:image" content="https://im1juanr.github.io/Potafolio/Images/Persona.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://im1juanr.github.io/Potafolio/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Juan Camilo Alaguna",
+      "alternateName": "IM1JUAN",
+      "jobTitle": "Estudiante de Ingeniería en Multimedia",
+      "url": "https://im1juanr.github.io/Potafolio/",
+      "image": "https://im1juanr.github.io/Potafolio/Images/Persona.jpg",
+      "sameAs": [
+        "https://github.com/IM1JUANR",
+        "https://www.linkedin.com/in/juan-alaguna-1576bb21a/",
+        "https://x.com/j_alaguna",
+        "https://www.instagram.com/juanca.rincon/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cajicá",
+        "addressRegion": "Cundinamarca",
+        "addressCountry": "CO"
+      },
+      "email": "j.alagunarincon@email.com",
+      "telephone": "+57 302 869 4060"
+    }
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID-GA"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TU-ID-GA');
+    </script>
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="y0Y4i6pvxQQ_LxDZC53OAExUQ0Ad9z-LB5Ntq2pxrpc" />
 </head>
 <body>
 
@@ -16,7 +82,7 @@
         <nav>
             <div class="logo">
                 <i class="fas fa-code"></i>
-                <span>JUAN</span>
+                <span>IM1JUAN</span>
             </div>
             <ul class="enlaces-nav">
                 <li><a href="#inicio">Inicio</a></li>
@@ -24,188 +90,184 @@
                 <li><a href="#sobremi">Sobre Mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button class="alternar-menu">
+            <button class="alternar-menu" aria-label="Menú de navegación">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
     </header>
 
+    <main>
+        <section class="heroe" id="inicio">
+            <h1>Hola, soy <span>Juan Camilo Alaguna</span></h1>
+            <h2 class="subtitulo-heroe">Conocido como IM1JUAN</h2>
+            <p>Estudiante de último semestre de Ingeniería en Multimedia apasionado por el desarrollo, creando soluciones digitales que conectan con las personas mientras aprendo y crezco en el mundo tecnológico.</p>
+            <div class="heroe-cta">
+                <a href="#proyectos" class="boton boton-relleno">Ver Proyectos</a>
+                <a href="#contacto" class="boton">Contactar</a>
+            </div>
+            <div class="iconos-sociales-principal">
+                <a href="https://github.com/IM1JUANR" class="icono-social" title="GitHub de Juan Camilo Alaguna" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="icono-social" title="LinkedIn de Juan Camilo Alaguna" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/j_alaguna" class="icono-social" title="Twitter de IM1JUAN" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/juanca.rincon/" class="icono-social" title="Instagram de Juan Camilo Alaguna" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
 
-    <section class="heroe" id="inicio">
-        <h1>Hola, soy <span>Juan Alaguna</span></h1>
-        <p>Estudiante de último semestre de Ingeniería en Multimedia apasionado por el desarrollo, creando soluciones digitales que conectan con las personas mientras aprendo y crezco en el mundo tecnológico.</p>
-        <div class="heroe-cta">
-            <a href="#proyectos" class="boton boton-relleno">Ver Proyectos</a>
-            <a href="#contacto" class="boton">Contactar</a>
-        </div>
-        <div class="iconos-sociales-principal">
-            <a href="https://github.com/IM1JUANR" class="icono-social"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="icono-social"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/j_alaguna" class="icono-social"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/juanca.rincon/" class="icono-social"><i class="fab fa-instagram"></i></a>
-        </div>
-    </section>
+        <section class="proyectos" id="proyectos">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="cuadricula-proyectos">
 
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <img src="Images/E1.png" alt="Proyecto de desarrollo web por Juan Camilo Alaguna (IM1JUAN)" width="320" height="220" loading="lazy">
+                        <div class="etiqueta-proyecto">Desarrollo Web</div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
+                        <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
+                        <div class="enlaces-proyecto">
+                            <a href="#" class="enlace-proyecto" aria-label="Ver demo del proyecto">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="#" class="enlace-proyecto" aria-label="Ver código en GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-    <section class="proyectos" id="proyectos">
-        <h2 class="titulo-seccion">Proyectos</h2>
-        <div class="cuadricula-proyectos">
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <img src="Images/E2.png" alt="Diseño UX/UI por Juan Camilo Alaguna (IM1JUAN)" width="320" height="220" loading="lazy">
+                        <div class="etiqueta-proyecto">Diseño UX/UI</div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
+                        <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
+                        <div class="enlaces-proyecto">
+                            <a href="#" class="enlace-proyecto" aria-label="Ver demo del proyecto">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="#" class="enlace-proyecto" aria-label="Ver código en GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="tarjeta-proyecto">
-                <div class="imagen-proyecto">
-                    <img src="Images/E1.png" alt="Proyecto 1">
-                    <div class="etiqueta-proyecto">Desarrollo Web</div>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <img src="Images/E4.png" alt="Aplicación móvil desarrollada por Juan Camilo Alaguna (IM1JUAN)" width="320" height="220" loading="lazy">
+                        <div class="etiqueta-proyecto">Mobile App</div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
+                        <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
+                        <div class="enlaces-proyecto">
+                            <a href="#" class="enlace-proyecto" aria-label="Ver demo del proyecto">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="#" class="enlace-proyecto" aria-label="Ver código en GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sobremi" id="sobremi">
+            <div class="imagen-sobremi">
+                <img src="Images/Persona.jpg" alt="Juan Camilo Alaguna (IM1JUAN) - Desarrollador Multimedia" width="500" height="500" loading="lazy">
+            </div>
+            <div class="contenido-sobremi">
+                <h2>Sobre Juan Camilo Alaguna (IM1JUAN)</h2>
+                <p>Soy Juan Camilo Alaguna, conocido en el mundo digital como IM1JUAN. Como estudiante universitario apasionado por el desarrollo y diseño digital, me especializo en crear soluciones web y móviles que sean tanto visualmente atractivas como intuitivas de usar.</p>
+                <p>Desde Cajicá, Colombia, combino mi formación académica en Ingeniería en Multimedia con proyectos reales que conectan con las personas y resuelven problemas cotidianos. Mi objetivo es desarrollar experiencias digitales que no solo funcionen bien, sino que también hagan sonreír a quienes las utilizan.</p>
+                <h3>Habilidades Técnicas</h3>
+                <div class="habilidades">
+                    <div class="habilidad">HTML</div>
+                    <div class="habilidad">CSS</div>
+                    <div class="habilidad">JavaScript</div>
+                    <div class="habilidad">React</div>
+                    <div class="habilidad">UI/UX Design</div>
+                    <div class="habilidad">Figma</div>
+                    <div class="habilidad">Python</div>
+                    <div class="habilidad">Unity</div>
+                    <div class="habilidad">MySQL</div>
+                    <div class="habilidad">C#</div>
+                    <div class="habilidad">Modelado 3D</div>
                 </div>
-                <div class="contenido-proyecto">
-                    <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
-                    <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
-                    <div class="enlaces-proyecto">
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fas fa-eye"></i> Demo
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contenedor-contacto">
+                <div class="info-contacto">
+                    <h2>Contacta a Juan Camilo Alaguna</h2>
+                    <p>¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para trabajos freelance, colaboraciones o simplemente para charlar sobre tecnología.</p>
+                    <div class="enlaces-contacto">
+                        <a href="mailto:j.alagunarincon@email.com" class="enlace-contacto">
+                            <div class="icono-contacto">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>j.alagunarincon@email.com</span>
                         </a>
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fab fa-github"></i> Código
+                        <a href="tel:+573028694060" class="enlace-contacto">
+                            <div class="icono-contacto">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>+57 302 869 4060</span>
+                        </a>
+                        <a href="#" class="enlace-contacto">
+                            <div class="icono-contacto">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span>Cajicá, Colombia</span>
                         </a>
                     </div>
                 </div>
+                <form class="formulario-contacto" action="https://formspree.io/f/myzejeqd" method="POST">
+                    <input type="text" name="nombre" class="control-formulario" placeholder="Nombre" required>
+                    <input type="email" name="email" class="control-formulario" placeholder="Email" required>
+                    <input type="text" name="asunto" class="control-formulario" placeholder="Asunto" required>
+                    <textarea name="mensaje" class="control-formulario" placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
             </div>
-
-            <div class="tarjeta-proyecto">
-                <div class="imagen-proyecto">
-                    <img src="Images/E2.png" alt="Proyecto 2">
-                    <div class="etiqueta-proyecto">Diseño UX/UI</div>
-                </div>
-                <div class="contenido-proyecto">
-                    <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
-                    <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
-                    <div class="enlaces-proyecto">
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fas fa-eye"></i> Demo
-                        </a>
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fab fa-github"></i> Código
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tarjeta-proyecto">
-                <div class="imagen-proyecto">
-                    <img src="Images/E4.png" alt="Proyecto 3">
-                    <div class="etiqueta-proyecto">Mobile App</div>
-                </div>
-                <div class="contenido-proyecto">
-                    <h3 class="titulo-proyecto">Nombre del Proyecto</h3>
-                    <p class="descripcion-proyecto">Descripción breve del proyecto y las tecnologías utilizadas. Explica los desafíos y soluciones implementadas.</p>
-                    <div class="enlaces-proyecto">
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fas fa-eye"></i> Demo
-                        </a>
-                        <a href="#" class="enlace-proyecto">
-                            <i class="fab fa-github"></i> Código
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sobremi" id="sobremi">
-        <div class="imagen-sobremi">
-            <img src="Images/Persona.jpg" alt="Tu Nombre">
-        </div>
-        <div class="contenido-sobremi">
-            <h2>Sobre Mí</h2>
-            <p>Soy un estudiante universitario apasionado por el desarrollo y diseño digital. Me encanta crear soluciones web y móviles que sean tanto visualmente atractivas como intuitivas de usar. Mientras avanzo en mi formación académica, busco combinar lo que aprendo en clase con proyectos reales que conecten con las personas y resuelvan problemas cotidianos</p>
-            <p>Mi objetivo es desarrollar experiencias digitales que no solo funcionen bien, sino que también hagan sonreír a quienes las utilizan.</p>
-            <div class="habilidades">
-                <div class="habilidad">HTML</div>
-                <div class="habilidad">CSS</div>
-                <div class="habilidad">JavaScript</div>
-                <div class="habilidad">React</div>
-                <div class="habilidad">UI/UX Design</div>
-                <div class="habilidad">Figma</div>
-                <div class="habilidad">Python</div>
-                <div class="habilidad">Unity</div>
-                <div class="habilidad">MySQL</div>
-                <div class="habilidad">C#</div>
-                <div class="habilidad">Modelado 3D</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contacto" id="contacto">
-        <div class="contenedor-contacto">
-            <div class="info-contacto">
-                <h2>Contacto</h2>
-                <p>¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para trabajos freelance, colaboraciones o simplemente para charlar sobre tecnología.</p>
-                <div class="enlaces-contacto">
-                    <a href="mailto:tu@email.com" class="enlace-contacto">
-                        <div class="icono-contacto">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <span>j.alagunarincon@email.com</span>
-                    </a>
-                    <a href="tel:+123456789" class="enlace-contacto">
-                        <div class="icono-contacto">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <span>+57 302 869 4060</span>
-                    </a>
-                    <a href="#" class="enlace-contacto">
-                        <div class="icono-contacto">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <span>Cajica, Colombia</span>
-                    </a>
-                </div>
-            </div>
-            <form class="formulario-contacto" action="https://formspree.io/f/myzejeqd" method="POST">
-                <input type="text" name="nombre" class="control-formulario" placeholder="Nombre" required>
-                <input type="email" name="email" class="control-formulario" placeholder="Email" required>
-                <input type="text" name="asunto" class="control-formulario" placeholder="Asunto" required>
-                <textarea name="mensaje" class="control-formulario" placeholder="Mensaje" required></textarea>
-                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="enlaces-pie">
-            <a href="https://github.com/IM1JUANR" class="enlace-pie"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="enlace-pie"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/j_alaguna" class="enlace-pie"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/juanca.rincon/" class="enlace-pie"><i class="fab fa-instagram"></i></a>
+        <div class="contenido-footer">
+            <h3>Juan Camilo Alaguna (IM1JUAN)</h3>
+            <p>Desarrollador Multimedia en Cajicá, Colombia</p>
         </div>
-        <p class="derechos">© 2025 Juan Camilo Alaguna Rincon. Todos los derechos reservados.</p>
+        <div class="enlaces-pie">
+            <a href="https://github.com/IM1JUANR" class="enlace-pie" title="GitHub de IM1JUAN" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="enlace-pie" title="LinkedIn de Juan Camilo Alaguna" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/j_alaguna" class="enlace-pie" title="Twitter de IM1JUAN" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/juanca.rincon/" class="enlace-pie" title="Instagram de Juan Camilo" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="derechos">© 2025 Juan Camilo Alaguna (IM1JUAN). Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.querySelector('.alternar-menu').addEventListener('click', function() {
-            document.querySelector('.enlaces-nav').style.display = 
-                document.querySelector('.enlaces-nav').style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(enlace => {
-            enlace.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Script para mejorar la experiencia de formulario
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.formulario-contacto');
-            
-            form.addEventListener('submit', function() {
-                const submitButton = form.querySelector('.boton-enviar');
-                submitButton.textContent = 'Enviando...';
-                submitButton.disabled = true;
-                // Se restablecerá cuando el usuario regrese de la página de Formspree
-            });
-        });
-    </script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
