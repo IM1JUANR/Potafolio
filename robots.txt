@@ -1,0 +1,46 @@
+# robots.txt para Juan Camilo Alaguna (IM1JUAN)
+# https://im1juanr.github.io/Potafolio/
+
+# Permitir acceso a todos los crawlers legítimos
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Permitir acceso específico a recursos
+Allow: /CSS/*
+Allow: /JS/*
+Allow: /Images/*
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Bots específicos con permisos especiales
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://im1juanr.github.io/Potafolio/sitemap.xml
+
+# Información adicional
+# Este archivo robots.txt es para el portfolio de Juan Camilo Alaguna (IM1JUAN)
+# Última actualización: Enero 2025

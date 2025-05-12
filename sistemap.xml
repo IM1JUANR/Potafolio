@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                          http://www.google.com/schemas/sitemap-image/1.1
+                          http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+  
+  <!-- Página principal - Juan Camilo Alaguna (IM1JUAN) -->
+  <url>
+    <loc>https://im1juanr.github.io/Potafolio/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://im1juanr.github.io/Potafolio/Images/Persona.jpg</image:loc>
+      <image:title>Juan Camilo Alaguna (IM1JUAN) - Desarrollador Multimedia</image:title>
+      <image:caption>Foto de perfil de Juan Camilo Alaguna, conocido como IM1JUAN</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Sección Inicio -->
+  <url>
+    <loc>https://im1juanr.github.io/Potafolio/#inicio</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Sección Proyectos -->
+  <url>
+    <loc>https://im1juanr.github.io/Potafolio/#proyectos</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://im1juanr.github.io/Potafolio/Images/E1.png</image:loc>
+      <image:title>Proyecto de Desarrollo Web - IM1JUAN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://im1juanr.github.io/Potafolio/Images/E2.png</image:loc>
+      <image:title>Proyecto de Diseño UX/UI - IM1JUAN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://im1juanr.github.io/Potafolio/Images/E4.png</image:loc>
+      <image:title>Aplicación Móvil - IM1JUAN</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Sección Sobre Mí -->
+  <url>
+    <loc>https://im1juanr.github.io/Potafolio/#sobremi</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://im1juanr.github.io/Potafolio/Images/Persona.jpg</image:loc>
+      <image:title>Juan Camilo Alaguna - Desarrollador Multimedia</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Sección Contacto -->
+  <url>
+    <loc>https://im1juanr.github.io/Potafolio/#contacto</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

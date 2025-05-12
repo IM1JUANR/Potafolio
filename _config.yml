@@ -1,0 +1,36 @@
+# Configuración de GitHub Pages para el portfolio de Juan Camilo Alaguna (IM1JUAN)
+
+# URL del sitio
+url: https://im1juanr.github.io
+baseurl: /Potafolio
+
+# Información del sitio
+title: Juan Camilo Alaguna (IM1JUAN) | Desarrollador Multimedia
+description: Portfolio de Juan Camilo Alaguna (IM1JUAN), estudiante de último semestre de Ingeniería en Multimedia. Desarrollo web, diseño UX/UI y aplicaciones móviles.
+author: Juan Camilo Alaguna
+
+# SEO
+google_site_verification: # Agrega tu código de verificación de Google aquí
+bing_site_verification: # Agrega tu código de verificación de Bing aquí
+
+# Redes sociales
+twitter:
+  username: j_alaguna
+github:
+  username: IM1JUANR
+
+# Plugins (GitHub Pages solo permite ciertos plugins)
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
