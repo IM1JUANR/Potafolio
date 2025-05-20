@@ -221,6 +221,9 @@ nav {
     background-color: #2a2a2a;
     position: relative;
 }
+.imagen-proyecto img{
+    width: 100%;
+}
 
 .etiqueta-proyecto {
     position: absolute;
@@ -279,7 +282,7 @@ nav {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 500px;
+    height:  500px;
 }
 
 .imagen-sobremi::before {
@@ -454,6 +457,7 @@ footer {
 }
 
 .enlaces-pie {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     gap: 2rem;
