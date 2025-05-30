@@ -149,8 +149,8 @@ nav {
 
 .iconos-sociales-principal {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para organizar verticalmente */
-    gap: 1rem; /* Espacio entre iconos */
+    flex-direction: column;
+    gap: 1rem;
     position: absolute;
     right: 5%;
     top: 50%;
@@ -174,16 +174,16 @@ nav {
 .iconos-sociales-principal .icono-social:hover {
     color: var(--color-fondo);
     background-color: var(--color-acento);
-    transform: translateX(-5px); /* Cambiado para un efecto horizontal en hover */
+    transform: translateX(-5px);
 }
 
 .proyectos {
-    padding: 8rem 5%;
+    padding: 4rem 5%;
 }
 
 .titulo-seccion {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -199,8 +199,8 @@ nav {
 
 .cuadricula-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
 .tarjeta-proyecto {
@@ -217,12 +217,16 @@ nav {
 
 .imagen-proyecto {
     width: 100%;
-    height: 220px;
+    height: 180px;
     background-color: #2a2a2a;
     position: relative;
 }
-.imagen-proyecto img{
+
+.imagen-proyecto img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .etiqueta-proyecto {
@@ -238,17 +242,19 @@ nav {
 }
 
 .contenido-proyecto {
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .titulo-proyecto {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
 }
 
 .descripcion-proyecto {
     opacity: 0.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 .enlaces-proyecto {
@@ -271,7 +277,7 @@ nav {
 }
 
 .sobremi {
-    padding: 8rem 5%;
+    padding: 6rem 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -282,7 +288,19 @@ nav {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height:  500px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-sobremi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 .imagen-sobremi::before {
@@ -290,10 +308,10 @@ nav {
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 100%;
-    height: 100%;
-    border: 5px solid var(--color-acento);
-    border-radius: 10px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border: 3px solid var(--color-acento);
+    border-radius: 15px;
     z-index: -1;
 }
 
@@ -494,54 +512,68 @@ footer {
     .heroe h1 {
         font-size: 4rem;
     }
+    
     .sobremi, .contenedor-contacto {
         grid-template-columns: 1fr;
     }
-    .imagen-sobremi::before {
-        display: none;
+    
+    .imagen-sobremi {
+        height: 400px;
+        margin-bottom: 2rem;
     }
+    
+    .imagen-sobremi::before {
+        top: -15px;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+    }
+    
     .iconos-sociales-principal {
         position: relative;
         right: auto;
         top: auto;
         transform: none;
         margin-top: 2rem;
-        flex-direction: row; /* En móvil vuelve a horizontal para mejor visualización */
+        flex-direction: row;
         justify-content: center;
     }
     
     .iconos-sociales-principal .icono-social:hover {
-        transform: translateY(-5px); /* En móvil vuelve al efecto vertical en hover */
+        transform: translateY(-5px);
     }
     
-}
-
-@media (max-width: 768px) {
     .enlaces-nav {
         display: none;
     }
+    
     .alternar-menu {
         display: block;
     }
-    .heroe h1 {
-        font-size: 3rem;
-    }
+    
     .heroe p {
         font-size: 1.2rem;
     }
+    
     .cuadricula-proyectos {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .heroe h1 {
         font-size: 2.5rem;
     }
+    
     .heroe-cta {
         flex-direction: column;
     }
+    
     .titulo-seccion {
         font-size: 2rem;
+    }
+    
+    .imagen-sobremi {
+        height: 300px;
     }
 }
