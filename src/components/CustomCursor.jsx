@@ -36,8 +36,8 @@ export default function CustomCursor() {
     }
 
     const tick = () => {
-      cur.current.x += (pos.current.x - cur.current.x) * 0.45
-      cur.current.y += (pos.current.y - cur.current.y) * 0.45
+      cur.current.x += (pos.current.x - cur.current.x) * 0.8
+      cur.current.y += (pos.current.y - cur.current.y) * 0.8
       if (ref.current) {
         ref.current.style.transform = `translate(${cur.current.x}px, ${cur.current.y}px) translate(-50%, -50%)`
       }
