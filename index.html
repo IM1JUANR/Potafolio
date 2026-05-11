@@ -1,251 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Meta Tags SEO Básicos -->
-    <title>Juan Camilo Alaguna (IM1JUAN) | Desarrollador Multimedia</title>
-    <meta name="description" content="Portfolio de Juan Camilo Alaguna (IM1JUAN), estudiante de último semestre de Ingeniería en Multimedia en Colombia. Desarrollo web, diseño UX/UI y aplicaciones móviles.">
-    <meta name="keywords" content="Juan Camilo Alaguna, IM1JUAN, desarrollador multimedia, desarrollo web Colombia, UX/UI design, portfolio">
-    <meta name="author" content="Juan Camilo Alaguna">
-    
-    <!-- Open Graph para Redes Sociales -->
-    <meta property="og:title" content="Juan Camilo Alaguna (IM1JUAN) | Desarrollador Multimedia">
-    <meta property="og:description" content="Portfolio profesional de Juan Camilo Alaguna, conocido como IM1JUAN. Desarrollo web y diseño digital desde Cajicá, Colombia.">
-    <meta property="og:image" content="https://im1juanr.github.io/Potafolio/Images/Persona.jpg">
-    <meta property="og:url" content="https://im1juanr.github.io/Potafolio/">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Juan Camilo Alaguna (IM1JUAN) | Portfolio">
-    <meta name="twitter:description" content="Desarrollador multimedia y diseñador digital. Estudiante de último semestre de Ingeniería en Multimedia.">
-    <meta name="twitter:image" content="https://im1juanr.github.io/Potafolio/Images/Persona.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://im1juanr.github.io/Potafolio/">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Juan Camilo Alaguna",
-      "alternateName": "IM1JUAN",
-      "jobTitle": "Estudiante de Ingeniería en Multimedia",
-      "url": "https://im1juanr.github.io/Potafolio/",
-      "image": "https://im1juanr.github.io/Potafolio/Images/Persona.jpg",
-      "sameAs": [
-        "https://github.com/IM1JUANR",
-        "https://www.linkedin.com/in/juan-alaguna-1576bb21a/",
-        "https://x.com/j_alaguna",
-        "https://www.instagram.com/juanca.rincon/"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cajicá",
-        "addressRegion": "Cundinamarca",
-        "addressCountry": "CO"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>Juan Camilo Alaguna | IM1JUAN · Multimedia Engineer</title>
+  <meta name="description" content="Portfolio of Juan Camilo Alaguna (IM1JUAN), Multimedia Engineer from Colombia. React, Node.js, full-stack web development and UX/UI design. Open to work." />
+  <meta name="keywords" content="Juan Camilo Alaguna, IM1JUAN, ingeniero multimedia, multimedia engineer, desarrollador web Colombia, web developer Colombia, React developer, Node.js, full-stack developer, UX/UI design, JavaScript, portfolio, Cundinamarca, Colombia" />
+  <meta name="author" content="Juan Camilo Alaguna" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f8f8f9" media="(prefers-color-scheme: light)" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://im1juanr.github.io/Potafolio/" />
+  <link rel="alternate" hreflang="en" href="https://im1juanr.github.io/Potafolio/" />
+  <link rel="alternate" hreflang="es" href="https://im1juanr.github.io/Potafolio/" />
+  <link rel="alternate" hreflang="x-default" href="https://im1juanr.github.io/Potafolio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Juan Camilo Alaguna | IM1JUAN · Multimedia Engineer" />
+  <meta property="og:description" content="Multimedia Engineer building digital experiences — web, design, and mobile. Open to work." />
+  <meta property="og:image" content="https://im1juanr.github.io/Potafolio/Imagenes/Yo.jpeg" />
+  <meta property="og:image:alt" content="Juan Camilo Alaguna — Multimedia Engineer" />
+  <meta property="og:url" content="https://im1juanr.github.io/Potafolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_CO" />
+  <meta property="og:site_name" content="IM1JUAN Portfolio" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@j_alaguna" />
+  <meta name="twitter:creator" content="@j_alaguna" />
+  <meta name="twitter:title" content="Juan Camilo Alaguna | IM1JUAN · Multimedia Engineer" />
+  <meta name="twitter:description" content="Multimedia Engineer — Web, Design & Mobile. Open to work." />
+  <meta name="twitter:image" content="https://im1juanr.github.io/Potafolio/Imagenes/Yo.jpeg" />
+  <meta name="twitter:image:alt" content="Juan Camilo Alaguna — Multimedia Engineer" />
+
+  <!-- Verification -->
+  <meta name="google-site-verification" content="w0shKGAaCUDR5lLjGGGq6XgkrwjEWn_LSu4UAOaIlQQ" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://im1juanr.github.io/Potafolio/#person",
+        "name": "Juan Camilo Alaguna",
+        "alternateName": "IM1JUAN",
+        "jobTitle": "Multimedia Engineer",
+        "description": "Multimedia Engineer from Colombia specializing in React, Node.js, full-stack web development and UX/UI design.",
+        "url": "https://im1juanr.github.io/Potafolio/",
+        "image": "https://im1juanr.github.io/Potafolio/Imagenes/Yo.jpeg",
+        "email": "j.alagunarincon@gmail.com",
+        "knowsLanguage": ["Spanish", "English"],
+        "sameAs": [
+          "https://github.com/IM1JUANR",
+          "https://www.linkedin.com/in/juan-alaguna-1576bb21a/",
+          "https://x.com/j_alaguna",
+          "https://www.instagram.com/juanca.rincon/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Suesca",
+          "addressRegion": "Cundinamarca",
+          "addressCountry": "CO"
+        },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Multimedia Engineer",
+          "occupationLocation": {
+            "@type": "Country",
+            "name": "Colombia"
+          }
+        }
       },
-      "email": "j.alagunarincon@gmail.com",
-      "telephone": "+57 302 869 4060"
-    }
-    </script>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID-GA"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'TU-ID-GA');
-    </script>
-    
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="w0shKGAaCUDR5lLjGGGq6XgkrwjEWn_LSu4UAOaIlQQ" />
+      {
+        "@type": "WebSite",
+        "@id": "https://im1juanr.github.io/Potafolio/#website",
+        "name": "IM1JUAN Portfolio",
+        "url": "https://im1juanr.github.io/Potafolio/",
+        "description": "Portfolio of Juan Camilo Alaguna (IM1JUAN), Multimedia Engineer from Colombia.",
+        "author": { "@id": "https://im1juanr.github.io/Potafolio/#person" },
+        "inLanguage": ["en", "es"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-
-    <header>
-        <nav>
-            <div class="logo">
-                <i class="fas fa-code"></i>
-                <span>IM1JUAN</span>
-            </div>
-            <ul class="enlaces-nav">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobremi">Sobre Mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <button class="alternar-menu" aria-label="Menú de navegación">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-
-    <main>
-        <section class="heroe" id="inicio">
-            <h1>Hola, soy <span>Juan Camilo Alaguna</span></h1>
-            <h2 class="subtitulo-heroe">Conocido como IM1JUAN, Ingeniero en Multimedia</h2>
-            <p>Apasionado por el desarrollo y diseño de experiencias digitales que combinan creatividad, usabilidad y rendimiento. Transformo ideas en productos web y móviles robustos, escalables e intuitivos.</p>
-            <div class="heroe-cta">
-                <a href="#proyectos" class="boton boton-relleno">Ver Proyectos</a>
-                <a href="#contacto" class="boton">Contactar</a>
-            </div>
-            <div class="iconos-sociales-principal">
-                <a href="https://github.com/IM1JUANR" class="icono-social" title="GitHub de Juan Camilo Alaguna" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="icono-social" title="LinkedIn de Juan Camilo Alaguna" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://x.com/j_alaguna" class="icono-social" title="Twitter de IM1JUAN" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/juanca.rincon/" class="icono-social" title="Instagram de Juan Camilo Alaguna" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-
-        <section class="proyectos" id="proyectos">
-            <h2 class="titulo-seccion">Proyectos</h2>
-            <div class="cuadricula-proyectos">
-
-                <article class="tarjeta-proyecto">
-                    <div class="imagen-proyecto">
-                        <img src="Imagenes/Carros_Shell.png" alt="Proyecto de desarrollo web por Juan Camilo Alaguna (IM1JUAN)" width="320" height="220" loading="lazy">
-                        <div class="etiqueta-proyecto">Desarrollo Web</div>
-                    </div>
-                    <div class="contenido-proyecto">
-                        <h3 class="titulo-proyecto">🏁 Colección de Carritos Shell</h3>
-                        <p class="descripcion-proyecto">Sitio web responsive para colección de autos Shell en miniatura, con diseño atractivo y experiencia de usuario optimizada. Desarrollado con HTML, CSS y JavaScript usando arquitectura modular.</p>
-                        <div class="enlaces-proyecto">
-                            <a href="https://im1juanr.github.io/Carritos-Shell/" class="enlace-proyecto" aria-label="Ver demo del proyecto">
-                                <i class="fas fa-eye"></i> Demo
-                            </a>
-                            <a href="https://github.com/IM1JUANR/Carritos-Shell" class="enlace-proyecto" aria-label="Ver código en GitHub">
-                                <i class="fab fa-github"></i> Código
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="tarjeta-proyecto">
-                    <div class="imagen-proyecto">
-                        <img src="Imagenes/Task-Manager.png" alt="Diseño UX/UI por Juan Camilo Alaguna (IM1JUAN)" width="320" height="220" loading="lazy">
-                        <div class="etiqueta-proyecto">Desarrollo Web</div>
-                    </div>
-                    <div class="contenido-proyecto">
-                        <h3 class="titulo-proyecto">Task-Manager</h3>
-                        <p class="descripcion-proyecto">Aplicación web de gestión de tareas con recordatorios automáticos por email y sistema de autenticación CSV. Desarrollada con React y EmailJS, cuenta con diseño minimalista responsive y notificaciones inteligentes según urgencia.</p>
-                        <div class="enlaces-proyecto">
-                            <a href="https://im1juanr.github.io/Task-Manager/" class="enlace-proyecto" aria-label="Ver demo del proyecto">
-                                <i class="fas fa-eye"></i> Demo
-                            </a>
-                            <a href="https://github.com/IM1JUANR/Task-Manager" class="enlace-proyecto" aria-label="Ver código en GitHub">
-                                <i class="fab fa-github"></i> Código
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="sobremi" id="sobremi">
-            <div class="imagen-sobremi">
-                <img src="Imagenes/Yo.jpeg" alt="Juan Camilo Alaguna (IM1JUAN) - Desarrollador Multimedia" width="500" height="500" loading="lazy">
-            </div>
-            <div class="contenido-sobremi">
-                <h2>Sobre Juan Camilo Alaguna (IM1JUAN)</h2>
-                <p>Soy Juan Camilo Alaguna, conocido en el mundo digital, apasionado por el desarrollo y diseño digital, me especializo en crear soluciones web y móviles que sean tanto visualmente atractivas como intuitivas de usar.</p>
-                <p>Como Ingeniero en Multimedia, me enfoco en diseñar y desarrollar soluciones digitales claras y eficientes. Domino tanto el front-end como el back-end, integrando tecnologías modernas para construir aplicaciones robustas y fáciles de usar. Priorizo la colaboración con diseñadores, gestores de producto y usuarios finales, asegurando que cada proyecto evolucione mediante la retroalimentación constante y la mejora iterativa.</p>
-                <h3>Habilidades Técnicas</h3>
-                <div class="habilidades">
-                    <div class="habilidad">HTML</div>
-                    <div class="habilidad">CSS</div>
-                    <div class="habilidad">JavaScript</div>
-                    <div class="habilidad">React</div>
-                    <div class="habilidad">UI/UX Design</div>
-                    <div class="habilidad">Figma</div>
-                    <div class="habilidad">Python</div>
-                    <div class="habilidad">Unity</div>
-                    <div class="habilidad">SQL</div>
-                    <div class="habilidad">C#</div>
-                    <div class="habilidad">Modelado 3D</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contacto" id="contacto">
-            <div class="contenedor-contacto">
-                <div class="info-contacto">
-                    <h2>Contacta a Juan Camilo Alaguna</h2>
-                    <p>¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para trabajos freelance, colaboraciones o simplemente para charlar sobre tecnología.</p>
-                    <div class="enlaces-contacto">
-                        <a href="mailto:j.alagunarincon@gmail.com" class="enlace-contacto">
-                            <div class="icono-contacto">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <span>j.alagunarincon@gmail.com</span>
-                        </a>
-                        <a href="tel:+573028694060" class="enlace-contacto">
-                            <div class="icono-contacto">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <span>+57 302 869 4060</span>
-                        </a>
-                        <a href="#" class="enlace-contacto">
-                            <div class="icono-contacto">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <span>Suesca, Cundinamarca, Colombia</span>
-                        </a>
-                    </div>
-                    
-                </div>
-                <form class="formulario-contacto" action="https://formspree.io/f/myzejeqd" method="POST">
-                    <input type="text" name="nombre" class="control-formulario" placeholder="Nombre" required>
-                    <input type="email" name="email" class="control-formulario" placeholder="Email" required>
-                    <input type="text" name="asunto" class="control-formulario" placeholder="Asunto" required>
-                    <textarea name="mensaje" class="control-formulario" placeholder="Mensaje" rows="5" required></textarea>
-                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-                </form>
-            </div>
-            <div class="enlaces-pie">
-            <a href="https://github.com/IM1JUANR" class="enlace-pie" title="GitHub de IM1JUAN" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/juan-alaguna-1576bb21a/" class="enlace-pie" title="LinkedIn de Juan Camilo Alaguna" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://x.com/j_alaguna" class="enlace-pie" title="Twitter de IM1JUAN" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/juanca.rincon/" class="enlace-pie" title="Instagram de Juan Camilo" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-        </section>
-    </main>
-
-    <footer>
-        <p class="derechos">© 2025 Juan Camilo Alaguna (IM1JUAN). Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="JS/script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

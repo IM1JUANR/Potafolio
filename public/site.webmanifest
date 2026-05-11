@@ -1,0 +1,12 @@
+{
+  "name": "Juan Camilo Alaguna | IM1JUAN",
+  "short_name": "IM1JUAN",
+  "description": "Multimedia Engineer Portfolio — React, Node.js, UX/UI",
+  "start_url": "/Potafolio/",
+  "scope": "/Potafolio/",
+  "display": "standalone",
+  "background_color": "#0a0a0b",
+  "theme_color": "#3358d4",
+  "lang": "en",
+  "categories": ["portfolio", "technology"]
+}
