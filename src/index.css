@@ -97,6 +97,7 @@ h1, h2, h3 { font-family: 'Geist', sans-serif; font-weight: 600; line-height: 1;
   pointer-events: none; z-index: 9998;
   mix-blend-mode: screen;
   opacity: 0;
+  will-change: transform;
   transition: opacity 0.2s, width 0.18s var(--ease), height 0.18s var(--ease), background 0.2s;
 }
 .cur-dot--visible { opacity: 1; }
