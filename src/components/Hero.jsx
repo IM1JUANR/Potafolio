@@ -21,8 +21,6 @@ export default function Hero() {
   const { lang } = useLang()
   const t = translations[lang].hero
   const time = useClock()
-  const glowBlue = useRef(null)
-  const glowRed  = useRef(null)
   const [masked, setMasked] = useState(false)
 
   const roles = {
@@ -38,26 +36,6 @@ export default function Hero() {
     return () => clearTimeout(id)
   }, [])
 
-  useEffect(() => {
-    let raf = null
-    let lastY = 0
-    const onScroll = () => {
-      lastY = window.scrollY
-      if (raf) return
-      raf = requestAnimationFrame(() => {
-        const y = lastY
-        if (glowBlue.current) glowBlue.current.style.transform = `translate3d(0,${y * 0.15}px,0)`
-        if (glowRed.current)  glowRed.current.style.transform  = `translate3d(0,${y * 0.10}px,0)`
-        raf = null
-      })
-    }
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      if (raf) cancelAnimationFrame(raf)
-    }
-  }, [])
-
   const scroll = (e, id) => {
     e.preventDefault()
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -66,8 +44,8 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero__grid-bg" aria-hidden="true" />
-      <div ref={glowBlue} className="hero__glow hero__glow--blue" aria-hidden="true" />
-      <div ref={glowRed}  className="hero__glow hero__glow--red"  aria-hidden="true" />
+      <div className="hero__glow hero__glow--blue" aria-hidden="true" />
+      <div className="hero__glow hero__glow--red"  aria-hidden="true" />
 
       {/* Top bar */}
       <div className="hero__top">
